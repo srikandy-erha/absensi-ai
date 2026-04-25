@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="card">
+  <h2>Absensi</h2>
+  <video id="video" autoplay width="100%"></video>
+  <button onclick="daftarWajah()">Daftar Wajah</button>
+  <button onclick="absen()">Absen</button>
+</div>
+
+<div class="card">
+  <h3>Analytics</h3>
+  <canvas id="chartAbsensi"></canvas>
+</div>
+
+<div class="card">
+  <h3>Keterlambatan</h3>
+  <canvas id="chartTelat"></canvas>
+</div>
+
+<div class="card">
+  <h3>Ranking</h3>
+  <div id="ranking"></div>
+</div>
+
+<div class="card">
+  <button onclick="exportPDF()">Export PDF</button>
+</div>
+
+</div>
+
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+<script src="face.js"></script>
+<script src="analytics.js"></script>
+
+</body>
+</html>
